@@ -1,0 +1,48 @@
+body{
+    margin: 0;
+}
+.slide-container{
+    position: relative;
+    width: 100%;
+}
+.slide img{
+    /* width 100% krne se ye  scrollable nahi hota */
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+}
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.721);
+    padding: 8px 18px;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.next{
+    right: 10px;
+}
+.prev{
+    left: 10px;
+}
+.caption{
+    
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    border: 1px solid black ;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.553);
+    padding: 15px 0px;
+
+}
+/* we will hide the slide and will display it with the help of js */
+.slide{
+    display: none;
+}
